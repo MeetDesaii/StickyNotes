@@ -95,4 +95,8 @@ class MainActivity : AppCompatActivity() {
         remoteViews.setTextViewText(R.id.tvWidget, binding!!.edtTxtAddNote.text.toString())
         appWidgetManager.updateAppWidget(thisWidget, remoteViews)
     }
+
+    override fun onBackPressed() {
+        finish()
+    }
 }
